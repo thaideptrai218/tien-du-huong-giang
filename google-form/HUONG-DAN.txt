@@ -1,43 +1,32 @@
-TẠO GOOGLE FORM CHO THIỆP CƯỚI LY & NGỌC
+TẠO GOOGLE FORM CHO THIỆP CƯỚI TIẾN DU & HƯƠNG GIANG
 
-1. Mở https://script.google.com/home/start bằng tài khoản Google của bạn.
-   Tạo dự án mới, xóa nội dung mẫu trong Code.gs và dán toàn bộ setup.gs.
+1. Mở https://script.google.com/home/start bằng tài khoản Google sẽ nhận phản hồi.
+   Mở lại dự án đã tạo trước đó, hoặc tạo dự án mới.
+   Xóa hết nội dung trong Code.gs rồi dán toàn bộ setup.gs.
 
 2. Lưu dự án. Chọn hàm setupWeddingRsvp rồi bấm Chạy (Run).
-   Google sẽ yêu cầu quyền tạo/quản lý Form và bảng tính trong tài khoản này.
-   Đây là mã bạn vừa tự thêm vào tài khoản; bạn có thể đọc toàn bộ trước khi chạy.
-   Chạy lại trong CÙNG dự án sẽ trả về các liên kết cũ, không tạo thêm Form.
+   Google sẽ hỏi quyền tạo/quản lý Form và bảng tính trong tài khoản này.
+   Chạy lại trong CÙNG dự án sẽ dùng lại Form cũ, không tạo thêm.
 
-3. Mở Nhật ký thực thi (Execution log). Sao chép LINK ĐỂ KHÁCH ĐIỀN
-   gửi lại trong cuộc trò chuyện để gắn vào thiệp. Website cần cấu hình đúng
-   cả đường dẫn Form và mã của các trường để gửi từ giao diện thiệp.
-   Chỉ sử dụng link kết thúc bằng /viewform. Không đưa link quản lý Form hoặc
-   bảng phản hồi vào website/kho GitHub.
+3. Mở Nhật ký thực thi (Execution log). Sao chép khối dưới dòng
+   "GỬI LẠI TOÀN BỘ KHỐI NÀY" để gắn vào thiệp.
+   Giữ riêng LINK QUẢN LÝ FORM và BẢNG PHẢN HỒI, không gửi công khai.
 
-Mã tạo sẵn:
-- Form hỏi tên, có tham dự không, số người, lời chúc.
-- Khách không tham dự sẽ được bỏ qua phần số người.
-- Bảng tính nhận phản hồi tự động và tab Tổng hợp số khách.
-- Không thu email, không yêu cầu giới hạn một câu trả lời/tài khoản.
-- Không chia sẻ công khai bảng phản hồi hoặc bản tóm tắt kết quả.
+4. Nếu đã chạy bản cũ, Form và Sheet cũ không còn được dùng.
+   Có thể xóa chúng trong Google Drive.
+
+Câu hỏi của Form giống form trên thiệp, cùng thứ tự, trên một trang:
+- Tên của bạn là? (bắt buộc)
+- Bạn là khách của? Khách nhà trai / Khách nhà gái (bắt buộc)
+- Gửi lời chúc tới Dâu Rể nha!
+- Xác nhận tham dự: Mình sẽ tham dự! / Tiếc quá! Mình không tham dự được mất rồi! (bắt buộc)
+- Số người tham dự: 1 đến 5 (thiệp chỉ hỏi khi khách chọn sẽ tham dự)
+
+Tab Tổng hợp trong Sheet đếm riêng nhà trai và nhà gái:
+số phản hồi, số lời xác nhận sẽ tham dự, tổng số khách sẽ đến.
 
 Trước khi gửi thiệp cho khách:
-- Mở link khách điền bằng cửa sổ ẩn danh. Nếu tài khoản cơ quan giới hạn
-  người trả lời, vào quyền truy cập người trả lời của Form và cho phép
-  bất kỳ ai có liên kết. Giới hạn của quản trị viên Google có thể vẫn áp dụng.
-- Gửi một phản hồi thử rồi kiểm tra tab câu trả lời và Tổng hợp trong Sheet.
+- Gửi một phản hồi thử từ thiệp, kiểm tra Sheet và tab Tổng hợp.
   Xóa phản hồi thử ở cả Form và Sheet sau khi kiểm tra.
-- Có thể chọn màu xanh navy và ảnh bìa trong giao diện chỉnh sửa Google Form.
-
-Khách điền họ tên, tham dự, số người và lời chúc bằng form trong giao diện thiệp.
-Nút Gửi xác nhận gửi trực tiếp đến Google Form; kết quả chính thức từ Google
-hiển thị ngay bên dưới trên cùng trang. Không cần mở tab khác để gửi.
-Form đã được chủ nhân tạo và gửi link khách điền; rsvp-config.js đã cấu hình
-để website dùng Form thật. Không cần chạy mã tạo mới để sử dụng thiệp hiện tại.
-Nếu đổi Form hoặc xóa/tạo lại câu hỏi, gửi lại link để cập nhật kết nối.
-
-NẾU ĐÃ CHẠY BẢN CŨ VÀ GẶP “The form currently has no response destination”
-Thay toàn bộ Code.gs bằng setup.gs mới trong CHÍNH dự án đang mở, lưu rồi
-chạy lại setupWeddingRsvp. Không tạo dự án mới hoặc xóa Script Properties:
-mã sẽ dùng tiếp Form và Sheet đã tạo, không thêm bản trùng.
-Không cần bấm Deploy. Chạy xong, lấy LINK ĐỂ KHÁCH ĐIỀN trong Execution log.
+- Mở link Form bằng cửa sổ ẩn danh. Nếu bị yêu cầu đăng nhập, vào quyền truy cập
+  người trả lời của Form và cho phép bất kỳ ai có liên kết.

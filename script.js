@@ -369,10 +369,9 @@ try {
     !url.password &&
     !url.port &&
     /^\/forms\/d\/e\/[A-Za-z0-9_-]+\/viewform\/?$/.test(url.pathname) &&
-    ["name", "attendance", "guests", "wish"].every((key) =>
+    ["name", "side", "attendance", "guests", "wish"].every((key) =>
       /^entry\.\d+$/.test(entries?.[key]),
-    ) &&
-    (entries.side === undefined || /^entry\.\d+$/.test(entries.side))
+    )
   ) {
     url.search = "";
     url.hash = "";
@@ -456,15 +455,13 @@ form.addEventListener("submit", (event) => {
   const payload = {
     [rsvpTarget.entries.name]: name,
     [rsvpTarget.entries.attendance]: coming
-      ? "Sẽ tham dự"
-      : "Không thể tham dự",
-    [rsvpTarget.entries.wish]: rsvpTarget.entries.side
-      ? wish
-      : `Bạn là: ${side}${wish ? `\n\n${wish}` : ""}`,
+      ? "Mình sẽ tham dự!"
+      : "Tiếc quá! Mình không tham dự được mất rồi!",
+    [rsvpTarget.entries.side]: side,
+    [rsvpTarget.entries.wish]: wish,
     fvv: "1",
-    pageHistory: coming ? "0,1,2" : "0,2",
+    pageHistory: "0",
   };
-  if (rsvpTarget.entries.side) payload[rsvpTarget.entries.side] = side;
   if (coming) payload[rsvpTarget.entries.guests] = $("#guest-count").value;
   const deliveryForm = document.createElement("form");
   deliveryForm.method = "POST";
