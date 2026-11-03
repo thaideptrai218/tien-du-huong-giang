@@ -1,0 +1,9 @@
+{
+  "hosting": {
+    "public": "dist-short-domain",
+    "ignore": [],
+    "headers": [
+      { "source": "**", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }
+    ]
+  }
+}

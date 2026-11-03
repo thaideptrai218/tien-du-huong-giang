@@ -321,6 +321,32 @@ $("#save-date").addEventListener("click", () => {
   setTimeout(() => URL.revokeObjectURL(url), 10000);
   toast("calendar.saved");
 });
+// The short domain serves this page with a <base> pointing at GitHub Pages, so an
+// in-page hash link and a cross-origin download attribute both need scripted handling.
+$(".skip-link").addEventListener("click", (event) => {
+  event.preventDefault();
+  $("#main").setAttribute("tabindex", "-1");
+  $("#main").focus();
+});
+$("#gift-save").addEventListener("click", async (event) => {
+  event.preventDefault();
+  const { href, download } = event.currentTarget;
+  try {
+    const response = await fetch(href);
+    if (!response.ok) throw new Error("QR unavailable");
+    const url = URL.createObjectURL(await response.blob());
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = download;
+    document.body.append(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 10000);
+  } catch {
+    window.open(href, "_blank", "noopener");
+  }
+});
+
 // Gift boxes only ever show the QR images configured in rsvp-config.js.
 const giftDialog = $("#gift-dialog");
 $$("[data-gift]").forEach((box) =>
