@@ -10,10 +10,10 @@ assets/qr/: QR MB Bank của Quách Tiến Du (nhà trai), Vũ Hương Giang (nh
 Đã giải mã, khớp số tài khoản in trên ảnh. Không sửa dữ liệu QR.
 
 NHẠC
-assets/canon-in-d.mp3: có sẵn trong mã nguồn mẫu, chưa rõ nguồn bản thu.
+assets/i-do-duc-phuc.mp3: "Em Đồng Ý (I Do)", Đức Phúc ft. 911 & Khắc Hưng, tệp do chủ nhân cung cấp.
+Quyền tác phẩm thuộc chủ sở hữu âm nhạc.
 
 CHỨC NĂNG
 HTML/CSS/JS tĩnh, chạy trên máy chủ HTTP tĩnh bất kỳ.
 Cá nhân hóa lời mời: thêm ?to=Tên%20khách trên URL.
-RSVP gửi tới Google Form: chạy google-form/setup.gs rồi điền rsvp-config.js.
-Khi thiếu cấu hình, nút gửi bị khóa.
+RSVP gửi tới Google Form của chủ nhân, cấu hình trong rsvp-config.js.
