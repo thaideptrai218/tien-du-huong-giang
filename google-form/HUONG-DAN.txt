@@ -17,7 +17,7 @@ TẠO GOOGLE FORM CHO THIỆP CƯỚI TIẾN DU & HƯƠNG GIANG
 
 Câu hỏi của Form giống form trên thiệp, cùng thứ tự, trên một trang:
 - Tên của bạn là? (bắt buộc)
-- Bạn là khách của? Khách nhà trai / Khách nhà gái (bắt buộc)
+- Bạn là khách bên nào? Khách nhà trai / Khách nhà gái (bắt buộc)
 - Gửi lời chúc tới Dâu Rể nha!
 - Xác nhận tham dự: Mình sẽ tham dự! / Tiếc quá! Mình không tham dự được mất rồi! (bắt buộc)
 - Số người tham dự: 1 đến 5 (thiệp chỉ hỏi khi khách chọn sẽ tham dự)

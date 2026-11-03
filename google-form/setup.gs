@@ -9,7 +9,7 @@
  */
 var RSVP = {
   name: 'Tên của bạn là?',
-  side: 'Bạn là khách của?',
+  side: 'Bạn là khách bên nào?',
   sideChoices: ['Khách nhà trai', 'Khách nhà gái'],
   wish: 'Gửi lời chúc tới Dâu Rể nha!',
   attendance: 'Xác nhận tham dự',
