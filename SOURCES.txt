@@ -1,0 +1,19 @@
+TIẾN DU & HƯƠNG GIANG — 16-17.11.2026
+
+THÔNG TIN
+Tên, gia đình, ngày âm lịch, địa chỉ Sao Mai: thiệp giấy của chủ nhân.
+Giờ lễ, giờ tiệc, địa chỉ hai nhà: chủ nhân cung cấp ngày 03.11.2026.
+
+ẢNH VÀ QR
+assets/photos/: ảnh cưới chủ nhân cung cấp, thu về rộng 1200px.
+assets/qr/: QR MB Bank của Quách Tiến Du (nhà trai), Vũ Hương Giang (nhà gái).
+Đã giải mã, khớp số tài khoản in trên ảnh. Không sửa dữ liệu QR.
+
+NHẠC
+assets/canon-in-d.mp3: có sẵn trong mã nguồn mẫu, chưa rõ nguồn bản thu.
+
+CHỨC NĂNG
+HTML/CSS/JS tĩnh, chạy trên máy chủ HTTP tĩnh bất kỳ.
+Cá nhân hóa lời mời: thêm ?to=Tên%20khách trên URL.
+RSVP gửi tới Google Form: chạy google-form/setup.gs rồi điền rsvp-config.js.
+Khi thiếu cấu hình, nút gửi bị khóa.

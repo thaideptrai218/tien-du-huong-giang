@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="vi" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f0e9" />
+    <script>
+      document.documentElement.classList.add("is-loading");
+      window.weddingBootTimer = setTimeout(function () {
+        document.documentElement.classList.remove(
+          "is-loading",
+          "is-unveiling",
+          "motion-ready",
+        );
+        document.getElementById("page-loader")?.setAttribute("hidden", "");
+        document.getElementById("main")?.removeAttribute("aria-busy");
+        document.dispatchEvent(new Event("wedding:ready"));
+      }, 20000);
+    </script>
+    <style>
+      #page-loader {
+        display: none;
+      }
+      html.is-loading {
+        overflow: hidden;
+      }
+      html.is-loading #page-loader {
+        display: grid;
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        place-items: center;
+        background: #f5f0e9;
+      }
+      html.is-loading body > :not(#page-loader) {
+        visibility: hidden;
+      }
+    </style>
+    <title>Thiệp mời tiệc cưới Tiến Du &amp; Hương Giang</title>
+    <meta
+      name="description"
+      content="Trân trọng kính mời đến chung vui cùng Tiến Du &amp; Hương Giang. Tiệc cưới 10h30 ngày 16.11 và 17.11.2026 tại Trung tâm giải trí Sao Mai."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:title" content="Thiệp mời tiệc cưới Tiến Du &amp; Hương Giang" />
+    <meta
+      property="og:description"
+      content="Tiệc cưới 10h30 ngày 16.11 và 17.11.2026 tại Trung tâm giải trí Sao Mai, Phú Thọ."
+    />
+    <meta property="og:image" content="https://thaideptrai218.github.io/tien-du-huong-giang/assets/share-preview.jpg" />
+    <meta property="og:url" content="https://thaideptrai218.github.io/tien-du-huong-giang/" />
+    <link rel="canonical" href="https://thaideptrai218.github.io/tien-du-huong-giang/" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&amp;family=Great+Vibes&amp;family=Playfair+Display:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="assets/photos/0J6A8613.jpg" />
+    <link rel="stylesheet" href="styles.css?v=20261103" />
+    <script src="rsvp-config.js?v=20261103" defer=""></script>
+    <script src="i18n.js?v=20261103" defer=""></script>
+    <script src="experience.js?v=20261103" defer=""></script>
+    <script src="script.js?v=20261103" defer=""></script>
+  </head>
+  <body>
+    <div id="page-loader" class="page-loader" role="status" aria-live="polite" aria-atomic="true">
+      <div class="loader-content">
+        <div class="loader-emblem" aria-hidden="true">
+          <span class="loader-orbit"></span>
+          <span class="loader-monogram">D<i>&amp;</i>G</span>
+        </div>
+        <p class="loader-status">Đang mở thiệp mời…</p>
+      </div>
+    </div>
+    <a class="skip-link" href="#main">Đến nội dung chính</a>
+    <div id="hearts" class="hearts" aria-hidden="true"></div>
+
+    <main id="main" class="sheet">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <p class="save-date reveal">SAVE THE DATE</p>
+        <h1 id="hero-title" class="hero-names">
+          <span class="name-groom reveal from-left">Tiến Du</span>
+          <span class="name-and reveal zoom">&amp;</span>
+          <span class="name-bride reveal from-right">Hương Giang</span>
+        </h1>
+        <figure class="hero-photo">
+          <img
+            src="assets/photos/0J6A8613.jpg"
+            width="1200"
+            height="1799"
+            alt="Tiến Du và Hương Giang nắm tay nhau trong trang phục cưới"
+            fetchpriority="high"
+          />
+        </figure>
+      </section>
+
+      <section class="announce" aria-labelledby="announce-title">
+        <blockquote class="quote reveal">
+          “Hôn nhân là chuyện cả đời,<br />Yêu người vừa ý, cưới người mình thương...”
+        </blockquote>
+        <h2 id="announce-title" class="red-title reveal">TRÂN TRỌNG THÔNG BÁO LỄ THÀNH HÔN</h2>
+        <div class="families">
+          <div class="reveal from-left">
+            <h3>NHÀ TRAI</h3>
+            <p>ÔNG: QUÁCH TIẾN DŨNG<br />BÀ: BÙI THỊ TIẾP</p>
+            <p class="family-address">659 An Dương Vương, P. Thống Nhất, Tỉnh Phú Thọ</p>
+          </div>
+          <div class="reveal from-right">
+            <h3>NHÀ GÁI</h3>
+            <p>ÔNG: VŨ KIÊN CƯỜNG<br />BÀ: VŨ THỊ THÚY PHƯỢNG</p>
+            <p class="family-address">Số nhà 4, Tổ 1, Ngõ 230 An Dương Vương, P. Thống Nhất, Tỉnh Phú Thọ</p>
+          </div>
+        </div>
+        <div class="couple-row">
+          <div class="reveal from-left">
+            <span>Chú Rể</span>
+            <strong>Tiến Du</strong>
+          </div>
+          <svg class="print-heart reveal zoom" viewBox="0 0 64 58" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-linecap="round">
+              <path stroke-width="2.3" stroke-dasharray="17 3 26 2" d="M32 55 5 27C-3 15 7 2 19 3c6 .4 10 4 13 9 3-5 7-8.6 13-9 12-1 22 12 14 24Z" />
+              <path stroke-width="2.3" stroke-dasharray="9 2 21 3" d="M32 48 10 25C5 16 12 8 20 8.500c5 .3 9 4 12 10 3-6 7-9.700 12-10 8-.5 15 7.500 10 16.500Z" />
+              <path stroke-width="2.3" stroke-dasharray="14 2 7 3" d="M32 41 15 23c-3-6 2-10 6-9.500 4 .5 8 4 11 11 3-7 7-10.500 11-11 4-.5 9 3.500 6 9.500Z" />
+              <path stroke-width="2.3" stroke-dasharray="6 2" d="M32 34 21 22c-1-3 1-4 3-3.500 3 .7 6 3.500 8 8.500 2-5 5-7.800 8-8.500 2-.5 4 .5 3 3.500Z" />
+            </g>
+          </svg>
+          <div class="reveal from-right">
+            <span>Cô Dâu</span>
+            <strong>Hương Giang</strong>
+          </div>
+        </div>
+        <div class="photo-pair">
+          <figure class="reveal from-left"><img src="assets/photos/0J6A8205.jpg" width="1200" height="1800" alt="Tiến Du ôm Hương Giang từ phía sau" loading="lazy" /></figure>
+          <figure class="reveal from-right"><img src="assets/photos/0J6A8087.jpg" width="1200" height="1800" alt="Tiến Du trong quân phục đứng bên Hương Giang" loading="lazy" /></figure>
+        </div>
+      </section>
+
+      <section class="invite" aria-labelledby="invite-title">
+        <hr class="rule reveal" />
+        <h2 id="invite-title" class="reveal">TRÂN TRỌNG KÍNH MỜI</h2>
+        <p class="guest-name reveal" id="guest-dedication">Quý khách &amp; gia đình</p>
+        <p class="invite-note reveal">Đến dự bữa cơm thân mật mừng hạnh phúc cùng gia đình chúng tôi</p>
+        <div class="photo-trio">
+          <figure class="reveal from-left"><img src="assets/photos/0J6A8033.jpg" width="1200" height="1800" alt="Chú rể Tiến Du" loading="lazy" /></figure>
+          <figure class="reveal zoom"><img src="assets/photos/0J6A8515.jpg" width="1200" height="1799" alt="Tiến Du và Hương Giang trong áo dài đỏ" loading="lazy" /></figure>
+          <figure class="reveal from-right"><img src="assets/photos/0J6A8134.jpg" width="1200" height="1800" alt="Cô dâu Hương Giang" loading="lazy" /></figure>
+        </div>
+      </section>
+
+      <section class="events" aria-label="Lịch trình hôn lễ">
+        <article class="event">
+          <div class="event-head">
+            <img class="event-icon from-left reveal" src="assets/photos/icon-groom.jpg" width="70" height="70" alt="" loading="lazy" />
+            <h3 class="reveal">LỄ ĐÍNH HÔN</h3>
+            <img class="event-icon from-right reveal" src="assets/photos/icon-bride.jpg" width="70" height="70" alt="" loading="lazy" />
+          </div>
+          <p class="event-weekday reveal">THỨ HAI</p>
+          <div class="event-date reveal">
+            <span>08H00</span>
+            <strong>16</strong>
+            <span>2026</span>
+          </div>
+          <p class="event-month reveal">Tháng 11</p>
+          <p class="event-lunar reveal">(Tức Ngày 08 Tháng 10 Năm Bính Ngọ)</p>
+          <p class="event-place reveal">Tại tư gia nhà gái</p>
+        </article>
+        <hr class="rule reveal" />
+        <article class="event">
+          <div class="event-head">
+            
+            <h3 class="reveal">TIỆC CƯỚI NHÀ GÁI</h3>
+            
+          </div>
+          <p class="event-weekday reveal">THỨ HAI</p>
+          <div class="event-date reveal">
+            <span>10H30</span>
+            <strong>16</strong>
+            <span>2026</span>
+          </div>
+          <p class="event-month reveal">Tháng 11</p>
+          <p class="event-lunar reveal">(Tức Ngày 08 Tháng 10 Năm Bính Ngọ)</p>
+          <p class="event-place reveal">Tại Trung tâm giải trí Sao Mai</p>
+        </article>
+        <hr class="rule reveal" />
+        <article class="event">
+          <div class="event-head">
+            <img class="event-icon from-left reveal" src="assets/photos/icon-groom.jpg" width="70" height="70" alt="" loading="lazy" />
+            <h3 class="reveal">LỄ THÀNH HÔN</h3>
+            <img class="event-icon from-right reveal" src="assets/photos/icon-bride.jpg" width="70" height="70" alt="" loading="lazy" />
+          </div>
+          <p class="event-weekday reveal">THỨ BA</p>
+          <div class="event-date reveal">
+            <span>09H00</span>
+            <strong>17</strong>
+            <span>2026</span>
+          </div>
+          <p class="event-month reveal">Tháng 11</p>
+          <p class="event-lunar reveal">(Tức Ngày 09 Tháng 10 Năm Bính Ngọ)</p>
+          <p class="event-place reveal">Tại tư gia nhà trai</p>
+        </article>
+        <hr class="rule reveal" />
+        <article class="event">
+          <div class="event-head">
+            
+            <h3 class="reveal">TIỆC CƯỚI NHÀ TRAI</h3>
+            
+          </div>
+          <p class="event-weekday reveal">THỨ BA</p>
+          <div class="event-date reveal">
+            <span>10H30</span>
+            <strong>17</strong>
+            <span>2026</span>
+          </div>
+          <p class="event-month reveal">Tháng 11</p>
+          <p class="event-lunar reveal">(Tức Ngày 09 Tháng 10 Năm Bính Ngọ)</p>
+          <p class="event-place reveal">Tại Trung tâm giải trí Sao Mai</p>
+        </article>
+      </section>
+
+      <section class="venues" aria-labelledby="venues-title">
+        <h2 id="venues-title" class="banner reveal from-left">
+          <svg viewBox="0 0 48 40" aria-hidden="true"><path fill="#f2e3c8" d="M3 16 16 11l16 5 13-5v20l-13 6-16-5-13 5Z" /><path fill="#7fae7d" d="M16 11v21l16 5V16Z" /><path fill="#e3483c" d="M25 1a9 9 0 0 0-9 9c0 7 9 16 9 16s9-9 9-16a9 9 0 0 0-9-9Zm0 12.500a3.500 3.500 0 1 1 0-7 3.500 3.500 0 0 1 0 7Z" /></svg>
+          ĐỊA ĐIỂM TỔ CHỨC
+        </h2>
+        <article class="venue">
+          <h3 class="reveal">TRUNG TÂM GIẢI TRÍ SAO MAI</h3>
+          <p class="venue-address reveal">Số 3 An Dương Vương, Tổ 4, P. Hòa Bình, Tỉnh Phú Thọ<br /><em>(Đối diện UBND tỉnh Hòa Bình cũ)</em></p>
+          <div class="map-frame reveal zoom">
+            <iframe title="Bản đồ TRUNG TÂM GIẢI TRÍ SAO MAI" src="https://www.google.com/maps?q=Trung+tâm+giải+trí+Sao+Mai,+Số+3+An+Dương+Vương,+Phường+Hòa+Bình,+Tỉnh+Phú+Thọ&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <a class="pill-button reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Trung+tâm+giải+trí+Sao+Mai,+Số+3+An+Dương+Vương,+Phường+Hòa+Bình,+Tỉnh+Phú+Thọ" target="_blank" rel="noopener noreferrer">Xem chỉ đường</a>
+        </article>
+        <article class="venue">
+          <h3 class="reveal">TƯ GIA NHÀ TRAI</h3>
+          <p class="venue-address reveal">659 An Dương Vương, P. Thống Nhất, Tỉnh Phú Thọ</p>
+          <div class="map-frame reveal zoom">
+            <iframe title="Bản đồ TƯ GIA NHÀ TRAI" src="https://www.google.com/maps?q=659+An+Dương+Vương,+Phường+Thống+Nhất,+Tỉnh+Phú+Thọ&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <a class="pill-button reveal" href="https://www.google.com/maps/search/?api=1&amp;query=659+An+Dương+Vương,+Phường+Thống+Nhất,+Tỉnh+Phú+Thọ" target="_blank" rel="noopener noreferrer">Xem chỉ đường</a>
+        </article>
+        <article class="venue">
+          <h3 class="reveal">TƯ GIA NHÀ GÁI</h3>
+          <p class="venue-address reveal">Số nhà 4, Tổ 1, Ngõ 230 An Dương Vương, P. Thống Nhất, Tỉnh Phú Thọ</p>
+          <div class="map-frame reveal zoom">
+            <iframe title="Bản đồ TƯ GIA NHÀ GÁI" src="https://www.google.com/maps?q=230+An+Dương+Vương,+Thống+Nhất,+Phú+Thọ&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <a class="pill-button reveal" href="https://www.google.com/maps/search/?api=1&amp;query=230+An+Dương+Vương,+Thống+Nhất,+Phú+Thọ" target="_blank" rel="noopener noreferrer">Xem chỉ đường</a>
+        </article>
+      </section>
+
+      <section class="save" aria-labelledby="save-title">
+        <h2 id="save-title" class="save-script reveal zoom">Save<small>the</small>Date</h2>
+        <p class="month-label reveal">THÁNG 11 - 2026</p>
+        <div class="calendar reveal">
+          <ol class="calendar-head" aria-hidden="true"><li>CN</li><li>T2</li><li>T3</li><li>T4</li><li>T5</li><li>T6</li><li>T7</li></ol>
+          <ol class="calendar-days" aria-label="Tháng 11 năm 2026, ngày 16 và 17 là ngày cưới"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li class="is-wedding">16</li><li class="is-wedding">17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li></ol>
+        </div>
+        <button class="save-link reveal" id="save-date" type="button">Lưu ngày vào lịch</button>
+      </section>
+
+      <section class="count" aria-labelledby="countdown-title">
+        <h2 id="countdown-title" class="reveal">HÔN LỄ SẼ DIỄN RA SAU:</h2>
+        <div class="countdown reveal" role="timer" aria-label="Thời gian còn lại đến lễ thành hôn">
+          <div><strong id="days">00</strong><span>Ngày</span></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><span>Giờ</span></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><span>Phút</span></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><span>Giây</span></div>
+        </div>
+        <div class="doodle reveal zoom" aria-hidden="true">
+          <span class="doodle-hearts"><i></i><i></i><i></i></span>
+          <svg viewBox="0 0 120 130" fill="none" stroke="#3b3331" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="42" cy="36" r="17" fill="#fff" />
+            <path fill="#3b3331" d="M26 32c1-11 9-15 16-15s15 5 16 14c-6-1-11-4-14-8-3 5-10 9-18 9Z" />
+            <path d="M36 39h.5M48 39h.5M39 45c2 1.500 4 1.500 6 0" />
+            <path fill="#3b3331" d="M25 58c4-3 30-3 34 0l2 42H23Z" />
+            <path fill="#fff" d="m37 55 5 9 5-9Z" />
+            <path d="M31 100v22m22-22v22M26 124h9m14 0h9" />
+            <circle cx="80" cy="42" r="16" fill="#fff" />
+            <path fill="#3b3331" d="M64 44c-2-14 7-20 16-20s18 6 16 20c1 8 0 12-3 15-1-9-2-20-13-27-6 8-13 7-13 12 0 5-1 10-2 15-2-4-2-10-1-15Z" />
+            <path d="M75 45h.5M86 45h.5M78 51c2 1.500 4 1.500 6 0" />
+            <path fill="#fff" d="M72 60c4 2 12 2 16 0l4 16 12 46H56l12-46Z" />
+            <path d="M66 96c8 3 20 3 28 0" />
+            <circle cx="62" cy="80" r="6" fill="#d9465b" stroke="none" />
+            <path d="M62 86v12" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
+        <h2 id="rsvp-title" class="rsvp-title reveal">Vui lòng cho biết sự hiện diện của bạn tại sự kiện</h2>
+        <form id="rsvp-form" class="rsvp-form reveal" hidden="">
+          <label class="sr-only" for="guest-name">Tên của bạn</label>
+          <input id="guest-name" name="name" autocomplete="name" placeholder="Tên của bạn là?" maxlength="80" required="" />
+          <fieldset>
+            <legend>Bạn là khách của?</legend>
+            <label class="radio-option"><input type="radio" name="side" value="groom" required="" /><span>Khách nhà trai</span></label>
+            <label class="radio-option"><input type="radio" name="side" value="bride" required="" /><span>Khách nhà gái</span></label>
+          </fieldset>
+          <label class="sr-only" for="guest-wish">Lời chúc</label>
+          <textarea id="guest-wish" name="wish" rows="2" maxlength="600" placeholder="Gửi lời chúc tới Dâu Rể nha!"></textarea>
+          <fieldset>
+            <legend class="sr-only">Xác nhận tham dự</legend>
+            <label class="radio-option"><input type="radio" name="attendance" value="yes" required="" /><span>Mình sẽ tham dự!</span></label>
+            <label class="radio-option"><input type="radio" name="attendance" value="no" required="" /><span>Tiếc quá! Mình không tham dự được mất rồi!</span></label>
+          </fieldset>
+          <div class="guest-count-wrap">
+            <label for="guest-count">Số người tham dự</label>
+            <select id="guest-count" name="guests">
+              <option value="1">01 người</option>
+              <option value="2">02 người</option>
+              <option value="3">03 người</option>
+              <option value="4">04 người</option>
+              <option value="5">05 người</option>
+            </select>
+          </div>
+          <button class="pill-button wide" type="submit">Gửi Xác Nhận</button>
+          <div id="rsvp-result" class="rsvp-result" role="status" hidden=""></div>
+        </form>
+        <div id="google-rsvp" class="google-rsvp" hidden="">
+          <iframe id="google-rsvp-frame" name="rsvp-receipt" title="Kết quả xác nhận tham dự từ Google Forms" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <a id="google-rsvp-link" target="_blank" rel="noopener noreferrer">Mở biểu mẫu nếu cần hỗ trợ</a>
+        </div>
+      </section>
+
+      <section class="gifts" id="wedding-gifts" aria-labelledby="gifts-title">
+        <h2 id="gifts-title" class="gifts-title reveal">Hộp mừng cưới</h2>
+        <p class="reveal">Cảm ơn tình cảm của mọi người đã dành cho chúng mình</p>
+        <div class="gift-row">
+          <button class="gift-box reveal zoom" type="button" data-gift="groom">
+            <span class="gift-frame"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#gift-art"></use></svg></span>
+            <span class="gift-label">Nhà Trai</span>
+          </button>
+          <button class="gift-box reveal zoom" type="button" data-gift="bride">
+            <span class="gift-frame"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#gift-art"></use></svg></span>
+            <span class="gift-label">Nhà Gái</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="album-head reveal">
+          <h2 id="gallery-title">Album hình cưới</h2>
+          <span></span>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item half reveal zoom" type="button" data-caption="Tiến Du và Hương Giang vẫy tay chào" aria-label="Phóng to ảnh: Tiến Du và Hương Giang vẫy tay chào">
+            <img src="assets/photos/0J6A8630.jpg" width="1200" height="1800" alt="Tiến Du và Hương Giang vẫy tay chào" loading="lazy" />
+          </button>
+          <button class="gallery-item half reveal zoom" type="button" data-caption="Hương Giang trong váy cưới" aria-label="Phóng to ảnh: Hương Giang trong váy cưới">
+            <img src="assets/photos/0J6A8134.jpg" width="1200" height="1800" alt="Hương Giang trong váy cưới" loading="lazy" />
+          </button>
+          <button class="gallery-item half reveal zoom" type="button" data-caption="Trong tà áo dài đỏ" aria-label="Phóng to ảnh: Trong tà áo dài đỏ">
+            <img src="assets/photos/0J6A8515.jpg" width="1200" height="1800" alt="Trong tà áo dài đỏ" loading="lazy" />
+          </button>
+          <button class="gallery-item half reveal zoom" type="button" data-caption="Một vòng tay ấm" aria-label="Phóng to ảnh: Một vòng tay ấm">
+            <img src="assets/photos/0J6A8205.jpg" width="1200" height="1800" alt="Một vòng tay ấm" loading="lazy" />
+          </button>
+          <button class="gallery-item half reveal zoom" type="button" data-caption="Nắm tay nhau" aria-label="Phóng to ảnh: Nắm tay nhau">
+            <img src="assets/photos/0J6A8613.jpg" width="1200" height="1800" alt="Nắm tay nhau" loading="lazy" />
+          </button>
+          <button class="gallery-item half reveal zoom" type="button" data-caption="Chú rể Tiến Du" aria-label="Phóng to ảnh: Chú rể Tiến Du">
+            <img src="assets/photos/0J6A8033.jpg" width="1200" height="1800" alt="Chú rể Tiến Du" loading="lazy" />
+          </button>
+          <button class="gallery-item full reveal zoom" type="button" data-caption="Sánh đôi" aria-label="Phóng to ảnh: Sánh đôi">
+            <img src="assets/photos/0J6A8087.jpg" width="1200" height="1800" alt="Sánh đôi" loading="lazy" />
+          </button>
+        </div>
+      </section>
+
+      <section class="closing" aria-label="Lời cảm ơn">
+        <img src="assets/photos/0J6A8630.jpg" width="1200" height="1799" alt="Tiến Du và Hương Giang vẫy tay chào" loading="lazy" />
+        <div class="closing-band reveal">
+          <p class="closing-script">Thank you!</p>
+          <p>Rất hân hạnh được đón tiếp!</p>
+        </div>
+      </section>
+    </main>
+
+    <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="gift-art" viewBox="0 0 64 64">
+        <rect x="9" y="27" width="46" height="31" rx="2" fill="#e2bf8f" />
+        <rect x="6" y="19" width="52" height="11" rx="2" fill="#efd5ad" /><rect x="9" y="30" width="46" height="3" fill="#c79e6b" />
+        <rect x="27" y="19" width="10" height="39" fill="#b5802c" />
+        <path fill="none" stroke="#b5802c" stroke-width="3.500" stroke-linecap="round" d="M32 19C24 5 11 6 14 13c2 4 11 6 18 6Zm0 0C40 5 53 6 50 13c-2 4-11 6-18 6Z" />
+      </symbol>
+    </svg>
+
+    <audio id="background-music" src="assets/canon-in-d.mp3" autoplay="" loop="" preload="metadata" playsinline=""></audio>
+    <button id="music-toggle" class="music-toggle" type="button" aria-label="Bật nhạc nền" aria-pressed="false">
+      <span class="music-disc"><span></span></span>
+      <span class="sr-only" id="music-status" role="status"></span>
+    </button>
+
+    <dialog id="lightbox" class="lightbox" aria-label="Album ảnh cưới">
+      <button class="dialog-close" data-close="" type="button" aria-label="Đóng ảnh">×</button>
+      <button class="lightbox-prev" type="button" aria-label="Ảnh trước">‹</button>
+      <figure>
+        <img id="lightbox-image" alt="" />
+        <figcaption><span id="lightbox-caption"></span><span id="lightbox-counter"></span></figcaption>
+      </figure>
+      <button class="lightbox-next" type="button" aria-label="Ảnh tiếp theo">›</button>
+    </dialog>
+    <dialog id="gift-dialog" class="gift-dialog" aria-labelledby="gift-title">
+      <button class="dialog-close" data-close="" type="button" aria-label="Đóng">×</button>
+      <h2 id="gift-title"></h2>
+      <img id="gift-qr" alt="Mã QR mừng cưới" hidden="" />
+      <a id="gift-save" class="pill-button" hidden="">Lưu mã QR</a>
+      <p id="gift-note" hidden=""></p>
+    </dialog>
+    <div id="toast" class="toast" role="status"></div>
+  </body>
+</html>
